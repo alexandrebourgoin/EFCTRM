@@ -49,6 +49,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EFCTRMDataModel.cs" />
+    <Compile Include="Migrations\201904252138342_Initial.cs" />
+    <Compile Include="Migrations\201904252138342_Initial.Designer.cs">
+      <DependentUpon>201904252138342_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -62,6 +67,11 @@
       <Project>{85813B83-ECCD-46D8-8BC3-192D59DE9B5E}</Project>
       <Name>Business</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201904252138342_Initial.resx">
+      <DependentUpon>201904252138342_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

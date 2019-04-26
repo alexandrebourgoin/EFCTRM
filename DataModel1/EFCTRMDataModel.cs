@@ -11,5 +11,6 @@ namespace EFCTRMDataModel
     public class GeneralSetup : DbContext
     {
         public DbSet<Market> Markets { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
     }
 }
